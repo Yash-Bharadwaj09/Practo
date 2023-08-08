@@ -71,7 +71,14 @@ class HomePage extends StatelessWidget {
             height: 400,
             width: 370,
             color: Colors.blue.shade900,
-            child: SvgPicture.asset('logo.png')
+            child: SvgPicture.asset(
+                "assets/image.svg",
+                height: 10,
+                width: 10,
+              colorFilter: ColorFilter.mode(
+                  Colors.transparent, BlendMode.lighten
+              ),
+            )
           )
         ],
       )
