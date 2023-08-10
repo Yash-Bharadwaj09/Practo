@@ -13,52 +13,74 @@ class MyHomePage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
           actions: [
-            IconButton(
-              onPressed: (){
-                //
-              },
-              icon: const Icon(
-                  Icons.question_mark_sharp,
-                  size: 10,
-              ),
-              color: Colors.black87,
+            Row(
+              children: [
+                IconButton(
+                  style: ElevatedButton.styleFrom(
+                    shape: const CircleBorder(),
+                    padding: const EdgeInsets.all(8.0),
+                    backgroundColor: Colors.black,
+                    foregroundColor: Colors.black87
+                  ),
+                  onPressed: (){
+                    //
+                  },
+                  icon: const Icon(
+                      Icons.question_mark_sharp,
+                      size: 10,
+                  ),
+                  color: Colors.black87,
+                  iconSize: 10,
+                ),
+              ],
             ),
             const SizedBox(
-              width: 12,
-              height: 16,
+              width: 5,
             ),
             const Center(
-              child: Text(
-                  'Help',
-                style: TextStyle(
-                  color: Colors.black87,
-                  fontFamily: 'Roboto',
-                ),
+              widthFactor:1,
+              child: Row(
+                children: [
+                  Text(
+                      'Help',
+                    style: TextStyle(
+                      color: Colors.black87,
+                      fontFamily: 'Roboto',
+                      fontSize: 12,
+                    ),
+                  ),
+                ],
               ),
             ),
           ],
-          leading: const Icon(
-              Icons.arrow_back,
-              color: Colors.black87,
-              size: 16,
+          leading:  IconButton(
+              icon: const Icon(
+                Icons.arrow_back,
+                size: 14,
+                color: Colors.black,
+              ),
+              onPressed: (){
+                //
+              },
+
           )
       ),
       body: SafeArea(
         child: Column(
-          mainAxisAlignment: MainAxisAlignment.start,
           children: [
-            const SizedBox(
-              height: 16,
-              child: Text(
-                  'Enter Your Mobile Number',
-                  style: TextStyle(
-                    fontFamily: 'Roboto',
-                    fontWeight: FontWeight.w600,
-                  ),
+                  const Row(
+                    children: [
+                      Text(
+                      'Enter Your Mobile Number',
+                      style: TextStyle(
+                        fontFamily: 'Roboto',
+                        fontWeight: FontWeight.w600,
+                      ),
               ),
-            ),
+                    ],
+                  ),
             const SizedBox(
-              height: 16,
+              height: 2,
             ),
             Padding(
                 padding: const EdgeInsets.all(10.0),
@@ -118,21 +140,31 @@ class MyHomePage extends StatelessWidget {
                   ],
                 ),
             ),
-            Align(
-              alignment: Alignment.bottomCenter,
-              child: ElevatedButton(
-                  style: ElevatedButton.styleFrom(backgroundColor: Colors.blue.shade400),
-                  onPressed: (){
-                    //
-                  },
-                  child: const Text(
-                    'Continue',
-                    style: TextStyle(
-                      color: Colors.white,
-                      fontSize: 14,
-                      fontWeight: FontWeight.w400,
+            Expanded(
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  SizedBox(
+                    height:40 ,
+                    width: 300,
+                    child: ElevatedButton(
+                        style: ElevatedButton.styleFrom(
+                          backgroundColor: Colors.blue.shade400,
+                        ),
+                        onPressed: (){
+                          //
+                        },
+                        child: const Text(
+                          'Continue',
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 14,
+                            fontWeight: FontWeight.w400,
+                          ),
+                        )
                     ),
-                  )
+                  ),
+                ],
               ),
             )
               ],
