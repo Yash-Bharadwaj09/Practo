@@ -1,10 +1,7 @@
 import 'package:flutter/material.dart';
-// import 'package:practo/form_tabbar.dart';
-import 'package:practo/form_tabbar2.dart';
-// import 'package:practo/form_tabbar.dart';
-// import 'package:practo/number.dart';
+// import 'package:practo/form_tabbar2.dart';
+import 'package:practo/searchpage.dart';
 // import 'package:practo/homepage.dart';
-//import 'package:practo/homepage2.dart';
 // import 'package:practo/number.dart';
 
 void main(){
@@ -18,7 +15,7 @@ class MyApp extends StatelessWidget {
     return  const MaterialApp(
       title: 'Practo',
       debugShowCheckedModeBanner: false,
-      home:  MyForm2(),
+      home:  SearchPage(),
     );
   }
 }
