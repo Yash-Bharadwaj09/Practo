@@ -296,7 +296,7 @@ class SearchPage extends StatelessWidget {
                              Align(
                               widthFactor: 1.10,
                               child: Container(
-                                    padding: EdgeInsets.all(8.0),
+                                    padding: const EdgeInsets.all(8.0),
                                     height: 70,
                                     width: 170,
                                     color: CupertinoColors.systemGrey6,
@@ -331,7 +331,7 @@ class SearchPage extends StatelessWidget {
                             Align(
                               widthFactor: 1.10,
                               child: Container(
-                                padding: EdgeInsets.all(8.0),
+                                padding: const EdgeInsets.all(8.0),
                                 height: 70,
                                 width: 170,
                                 color: CupertinoColors.systemGrey6,
@@ -366,7 +366,7 @@ class SearchPage extends StatelessWidget {
                             Align(
                               widthFactor: 1.10,
                               child: Container(
-                                padding: EdgeInsets.all(8.0),
+                                padding: const EdgeInsets.all(8.0),
                                 height: 70,
                                 width: 170,
                                 color: CupertinoColors.systemGrey6,
@@ -401,7 +401,7 @@ class SearchPage extends StatelessWidget {
                             Align(
                               widthFactor: 1.10,
                               child: Container(
-                                padding: EdgeInsets.all(8.0),
+                                padding: const EdgeInsets.all(8.0),
                                 height: 70,
                                 width: 170,
                                 color: CupertinoColors.systemGrey6,
@@ -436,7 +436,7 @@ class SearchPage extends StatelessWidget {
                             Align(
                               widthFactor: 1.10,
                               child: Container(
-                                padding: EdgeInsets.all(8.0),
+                                padding: const EdgeInsets.all(8.0),
                                 height: 70,
                                 width: 170,
                                 color: CupertinoColors.systemGrey6,
@@ -474,7 +474,7 @@ class SearchPage extends StatelessWidget {
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               Container(
-                                padding: EdgeInsets.all(8.0),
+                                padding: const EdgeInsets.all(8.0),
                                 height: 70,
                                 width: 170,
                                 color: CupertinoColors.systemGrey6,
@@ -506,7 +506,7 @@ class SearchPage extends StatelessWidget {
                                 height: 8
                               ),
                               Container(
-                                padding: EdgeInsets.all(8.0),
+                                padding: const EdgeInsets.all(8.0),
                                 height: 70,
                                 width: 170,
                                 color: CupertinoColors.systemGrey6,
@@ -538,7 +538,7 @@ class SearchPage extends StatelessWidget {
                                 height: 8,
                               ),
                               Container(
-                                padding: EdgeInsets.all(8.0),
+                                padding: const EdgeInsets.all(8.0),
                                 height: 70,
                                 width: 170,
                                 color: CupertinoColors.systemGrey6,
@@ -570,7 +570,7 @@ class SearchPage extends StatelessWidget {
                                 height: 8,
                               ),
                               Container(
-                                padding: EdgeInsets.all(8.0),
+                                padding: const EdgeInsets.all(8.0),
                                 height: 70,
                                 width: 170,
                                 color: CupertinoColors.systemGrey6,
@@ -602,7 +602,7 @@ class SearchPage extends StatelessWidget {
                                 height: 8,
                               ),
                               Container(
-                                padding: EdgeInsets.all(8.0),
+                                padding: const EdgeInsets.all(8.0),
                                 height: 70,
                                 width: 170,
                                 color: CupertinoColors.systemGrey6,
