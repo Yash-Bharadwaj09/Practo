@@ -1,9 +1,25 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter_svg/svg.dart';
+import 'package:practo/offerpage.dart';
 
-class SearchPage extends StatelessWidget {
+class SearchPage extends StatefulWidget {
   const SearchPage({super.key});
+
+  @override
+  State<SearchPage> createState() => _SearchPageState();
+}
+
+class _SearchPageState extends State<SearchPage> {
+  List<String> items = <String>[
+    'Bengaluru',
+    'New Delhi',
+    'Noida',
+    'Hyderabad',
+    'Gurugram',
+  ];
+  String dropdownValue = 'Noida';
+
 
   @override
   Widget build(BuildContext context) {
@@ -23,29 +39,41 @@ class SearchPage extends StatelessWidget {
             color: Colors.white70,
             size: 18,
           ),
-          onPressed: (){},
+          onPressed: (){
+            Navigator.pop(
+              context,
+                  MaterialPageRoute(builder: (context) => const OfferPage())
+
+            );
+          },
         ),
         actions: [
-          const Column(
-            children: [
-              Text(
-                textAlign: TextAlign.right,
-                  'LOCATION',
-                style: TextStyle(
-                color: Colors.white,
-                fontSize: 12
-                ),
-              ),
-            ],
-          ),
-          IconButton(
-              onPressed: (){},
+          DropdownButton<String>(
               icon: const Icon(
                 Icons.location_on_outlined,
                 size: 14,
-                color: Colors.white70,
-              )
-          )
+                color: Colors.teal,
+              ),
+              value: dropdownValue,
+              focusColor: Colors.blue.shade900,
+              style: const TextStyle(
+                fontSize: 12,
+                color: Colors.black45
+              ),
+              items: items.map<DropdownMenuItem<String>>(
+                      (String value) {
+                    return DropdownMenuItem<String>(
+                      value: value,
+                      child: Text(value),
+                    );
+                  }
+              ).toList(),
+              onChanged: (String? newValue){
+                setState(() {
+                  dropdownValue = newValue!;
+                });
+              }
+          ),
         ],
       ),
       body: SingleChildScrollView(

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:practo/offerpage.dart';
 
 
 final GlobalKey<FormState> _genderKey = GlobalKey<FormState>();
@@ -51,7 +52,10 @@ class _MyForm2State extends State<MyForm2> {
 
             icon: const Icon(Icons.arrow_back,color: Colors.black,size: 20),
             onPressed: (){
-              //
+              Navigator.pop(
+                context,
+                MaterialPageRoute(builder: (context) => const OfferPage())
+              );
             },
           ),
           title: const Row(

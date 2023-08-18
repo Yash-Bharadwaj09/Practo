@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter_svg/svg.dart';
+import 'package:practo/form_tabbar2.dart';
+import 'package:practo/number.dart';
+import 'package:practo/searchpage.dart';
 
 class OfferPage extends StatefulWidget {
   const OfferPage({super.key});
@@ -39,7 +42,12 @@ class _OfferPageState extends State<OfferPage> {
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               IconButton(
-                                  onPressed: (){},
+                                  onPressed: (){
+                                    Navigator.push(
+                                        context,
+                                        MaterialPageRoute(builder: (context) => MyHomePage())
+                                    );
+                                  },
                                   icon: const Icon(
                                     Icons.density_medium_sharp,
                                     size: 16,
@@ -90,7 +98,11 @@ class _OfferPageState extends State<OfferPage> {
                                   width: 8,
                                 ),
                                 IconButton(
-                                    onPressed: (){},
+                                    onPressed: (){
+                                      Navigator.push(context,
+                                          MaterialPageRoute(builder: (context) => MyForm2())
+                                      );
+                                    },
                                     icon: const Icon(
                                       Icons.file_open,
                                       color: Colors.black,
@@ -210,7 +222,11 @@ class _OfferPageState extends State<OfferPage> {
                                           color: Colors.white,
                                         )
                                       ),
-                                      onPressed: (){},
+                                      onPressed: (){
+                                        Navigator.push(context,
+                                            MaterialPageRoute(builder: (context) => SearchPage())
+                                        );
+                                      },
                                       child: const Text(
                                         'Know More',
                                         style: TextStyle(

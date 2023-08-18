@@ -3,9 +3,9 @@ import 'package:practo/homepage_screens/homepage3.dart';
 import 'package:practo/homepage_screens/homepage5.dart';
 import 'package:practo/homepage_screens/homepage4.dart';
 import 'package:intl_phone_field/intl_phone_field.dart';
+import 'package:practo/number.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
-// import 'package:practo/homepage.dart';
-//import 'package:flutter_svg/flutter_svg.dart';
+
 
 
 class HomePage2 extends StatefulWidget {
@@ -84,7 +84,10 @@ class _HomePage2State extends State<HomePage2> {
 
                   InkWell(
                     onTap: (){
-                      //
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(builder: (context) => const MyHomePage())
+                      );
                     },
                     child: const Row(
                       mainAxisAlignment: MainAxisAlignment.start,
